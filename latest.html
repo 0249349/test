@@ -22,11 +22,13 @@
 				height: 100%;
 				padding-top: 1%; /* Padding from the top */
 				padding-bottom: 1%;
+				padding-left: 1%;
+				padding-right: 1%
 			}
 
 			iframe {
-				width: 75%; /* Default width */
-				height: 900px;
+				width: 100%; /* Default width */
+				height: 935px;
 			}
 
 			/* Media query for vertical (narrower) formats */
@@ -35,26 +37,28 @@
 					width: 100%; /* Make iframe width 100% on small screens */
 				}
 			}
+
 		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-		<header id="header">
-			<nav>
-				<ul>
+
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="latest.html" class="active">Latest Issue</a></li>
 					<li><a href="https://itch.io">Previous Issues</a></li>
-				</ul>
-			</nav>
-		</header>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Main -->
-					<section id="main" class="wrapper">
+					<section id="main" class="wrapper.fullscreen">
 						<div class="centered-iframe">
 							<iframe src="Issues/Latest.pdf"></iframe>
 						</div>
@@ -63,11 +67,7 @@
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-						&copy; Untitled. All rights reserved.
-				</div>
-			</footer>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
